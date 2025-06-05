@@ -6,10 +6,10 @@ public class testeMouse {
         cobra.modelo = "Cobra";
         cobra.marca = "Redragon";
         cobra.dataFabricacao = "12-03-2017";
-        cobra.temRGB = true;
         cobra.tipoConexao = "Fio";
         cobra.dpi = 800;
 
+        cobra.adicionarRGB();
         cobra.mouseGamer();
 
         cobra.jogarJoguinho();

@@ -1,13 +1,13 @@
 package aula03.atividade;
 
 public class Mouse {
-    String modelo;
-    String marca;
-    String dataFabricacao;
-    boolean temRGB;
-    boolean ehGamer;
-    String tipoConexao;
-    int dpi;
+    public String modelo;
+    public String marca;
+    protected String dataFabricacao;
+    private boolean temRGB;
+    private boolean ehGamer;
+    protected String tipoConexao;
+    public int dpi;
 
     void status() {
         System.out.println("Modelo:             " + this.modelo);
@@ -17,6 +17,10 @@ public class Mouse {
         System.out.println("Mouse gamer:        " + this.ehGamer);
         System.out.println("Tipo de conexão:    " + this.tipoConexao);
         System.out.println("Seu DPI:            " + this.dpi);
+    }
+
+    void adicionarRGB() {
+        this.temRGB = true;
     }
 
     void mouseGamer() {

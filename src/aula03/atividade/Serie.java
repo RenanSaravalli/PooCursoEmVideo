@@ -1,13 +1,13 @@
 package aula03.atividade;
 
 public class Serie {
-    String nome;
-    String empresa;
-    String dataLancamento;
-    int duracao;
-    boolean assistida = false;
-    int avaliacao;
-    String[] elenco;
+    public String nome;
+    protected String empresa;
+    protected String dataLancamento;
+    protected int duracao;
+    private boolean assistida = false;
+    public int avaliacao;
+    private String[] elenco;
 
     void assistirSerie() {
         assistida = true;
