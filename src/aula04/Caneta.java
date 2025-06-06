@@ -43,4 +43,9 @@ public class Caneta {
     public void setTampada(boolean tampada) {
         this.tampada = tampada;
     }
+
+    public void status() {
+        System.out.println(this.modelo);
+        System.out.println(this.cor);
+    }
 }
