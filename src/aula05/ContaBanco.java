@@ -3,6 +3,7 @@ package aula05;
 import java.util.Random;
 
 public class ContaBanco {
+    // Meus atributos
     public int numConta;
     protected String tipoConta;
     private String titularConta;
@@ -10,6 +11,7 @@ public class ContaBanco {
     private double saldoConta;
     private int digitoAgencia;
 
+    // Métodos Especiais (Construtores, Getters e Setters)
     public ContaBanco() {
         this.statusConta = false;
         this.saldoConta = 0;
@@ -63,6 +65,7 @@ public class ContaBanco {
         this.digitoAgencia = digitoAgencia;
     }
 
+    // Métodos de lógica
     public void abrirConta(String titularConta, String tipoConta) {
         if (isStatusConta()) {
             System.out.println(getTipoConta() + " você já tem uma conta aberta!!" );
