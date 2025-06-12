@@ -9,5 +9,6 @@ public class Aula06 {
         controleRemoto.maisVolume();
         controleRemoto.maisVolume();
         controleRemoto.abrirMenu();
+        //
     }
 }
