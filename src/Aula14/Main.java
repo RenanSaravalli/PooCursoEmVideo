@@ -12,7 +12,22 @@ public class Main {
         g[0] = new Gafanhato("Renan", 19, "M", "re");
         g[1] = new Gafanhato("Ana", 19, "F", "Aninha");
 
-        System.out.println("---- Vídeos ----");
+        Vizualizacao[] vis = new Vizualizacao[3];
+        vis[0] = new Vizualizacao(g[0], v[2]);
+        vis[1] = new Vizualizacao(g[0], v[0]);
+        vis[2] = new Vizualizacao(g[0], v[1]);
+
+        vis[0].avaliar();
+        vis[1].avaliar(10);
+        vis[2].avaliar(35.0f);
+
+        System.out.println(vis[0]);
+        System.out.println(vis[1]);
+        System.out.println(vis[2]);
+
+
+
+        /*System.out.println("---- Vídeos ----");
         System.out.println(v[0]);
         System.out.println(v[1]);
         System.out.println(v[2]);
@@ -21,7 +36,7 @@ public class Main {
 
         System.out.println("---- Gafanhotos ----");
         System.out.println(g[0]);
-        System.out.println(g[1]);
+        System.out.println(g[1]);*/
     }
 
 
